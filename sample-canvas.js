@@ -1,0 +1,13 @@
+let canv = document.createElement("canvas");
+document.body.appendChild(canv);
+canv.width = 400;
+canv.height = 200;
+let ctx = canv.getContext("2d");
+ctx.fillStyle = "rgba(255,150,150, 0.8)";
+ctx.font = "36pt Times New Roman";
+ctx.textBaseline = "top";
+ctx.fillText("test canvas", 2, 2);
+ctx.fillStyle = "#EEFF00";
+ctx.fillRect(50, 50, 55, 95);
+ctx.fillStyle = "#FF00CC";
+ctx.fillRect(100, 35, 60, 50);
